@@ -3,41 +3,52 @@
   <head>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="theme-color" content="#000000" />
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>Create React App + Go API</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
+  <body class="bg-gray-100">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <header class="bg-white shadow">
+      <div class="container mx-auto px-4 py-6">
+        <div class="hero text-center">
+          <h1 class="text-4xl font-bold text-gray-900">Welcome to Our Product</h1>
+          <p class="mt-4 text-lg text-gray-600">Your solution for modern web applications.</p>
+          <a href="#features" class="mt-6 inline-block bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700">Learn More</a>
+        </div>
+      </div>
+    </header>
+    <main class="container mx-auto px-4 py-8">
+      <section id="features" class="my-8">
+        <h2 class="text-3xl font-semibold text-gray-900">Features</h2>
+        <ul class="mt-4 space-y-4">
+          <li class="bg-white p-4 rounded-lg shadow">
+            <h3 class="text-xl font-medium text-gray-900">Feature 1</h3>
+            <p class="text-gray-600">Description</p>
+          </li>
+          <li class="bg-white p-4 rounded-lg shadow">
+            <h3 class="text-xl font-medium text-gray-900">Feature 2</h3>
+            <p class="text-gray-600">Description</p>
+          </li>
+          <li class="bg-white p-4 rounded-lg shadow">
+            <h3 class="text-xl font-medium text-gray-900">Feature 3</h3>
+            <p class="text-gray-600">Description</p>
+          </li>
+        </ul>
+      </section>
+      <section id="cta" class="my-8 text-center">
+        <h2 class="text-3xl font-semibold text-gray-900">Get Started Today</h2>
+        <p class="mt-4 text-lg text-gray-600">Sign up now and start using our product immediately.</p>
+        <a href="#signup" class="mt-6 inline-block bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-700">Sign Up</a>
+      </section>
+    </main>
+    <footer class="bg-white shadow py-6">
+      <div class="container mx-auto text-center">
+        <p class="text-gray-600">&copy; 2025 Your Company. All rights reserved.</p>
+      </div>
+    </footer>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
-</html>
+                                                                     </html>
